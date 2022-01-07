@@ -15,6 +15,8 @@ export default {
   mode: 'development',
   optimization: {
     usedExports: true,
+    innerGraph: true,
+    sideEffects: true,
   },
   experiments: {
     outputModule: true,
