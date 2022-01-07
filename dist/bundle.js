@@ -6,9 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+/******/ var __webpack_modules__ = ({
 
 /***/ "./cube.js":
 /*!*****************!*\
@@ -16,7 +14,7 @@
   \*****************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("/* unused harmony export cube */\nconst cube = (x) => x * x * x;\n\n//# sourceURL=webpack://math-js/./cube.js?");
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cube\": () => (/* binding */ cube)\n/* harmony export */ });\nconst cube = (x) => x * x * x;\n\n//# sourceURL=webpack://math-js/./cube.js?");
 
 /***/ }),
 
@@ -24,9 +22,9 @@ eval("/* unused harmony export cube */\nconst cube = (x) => x * x * x;\n\n//# so
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/***/ ((__unused_webpack___webpack_module__, __unused_webpack___webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("/* harmony import */ var _cube_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cube.js */ \"./cube.js\");\n/* harmony import */ var _square_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./square.js */ \"./square.js\");\n\n\n\n\n\n//# sourceURL=webpack://math-js/./index.js?");
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"cube\": () => (/* reexport safe */ _cube_js__WEBPACK_IMPORTED_MODULE_0__.cube),\n/* harmony export */   \"square\": () => (/* reexport safe */ _square_js__WEBPACK_IMPORTED_MODULE_1__.square)\n/* harmony export */ });\n/* harmony import */ var _cube_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cube.js */ \"./cube.js\");\n/* harmony import */ var _square_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./square.js */ \"./square.js\");\n\n\n\n\n\n//# sourceURL=webpack://math-js/./index.js?");
 
 /***/ }),
 
@@ -36,60 +34,61 @@ eval("/* harmony import */ var _cube_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack
   \*******************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("/* unused harmony export square */\nconst square = (x) => x * x;\n\n//# sourceURL=webpack://math-js/./square.js?");
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"square\": () => (/* binding */ square)\n/* harmony export */ });\nconst square = (x) => x * x;\n\n//# sourceURL=webpack://math-js/./square.js?");
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		// no module.id needed
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/define property getters */
+/******/ (() => {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ })();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ (() => {
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ })();
+/******/ 
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./index.js");
-/******/ 	
-/******/ })()
-;
+/******/ 
+/******/ // startup
+/******/ // Load entry module and return exports
+/******/ // This entry module can't be inlined because the eval devtool is used.
+/******/ var __webpack_exports__ = __webpack_require__("./index.js");
+/******/ var __webpack_exports__cube = __webpack_exports__.cube;
+/******/ var __webpack_exports__square = __webpack_exports__.square;
+/******/ export { __webpack_exports__cube as cube, __webpack_exports__square as square };
+/******/ 

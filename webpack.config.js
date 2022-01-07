@@ -8,9 +8,15 @@ export default {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    library: {
+      type: 'module',
+    }
   },
  mode: 'development',
  optimization: {
    usedExports: true,
+ },
+ experiments: {
+   outputModule: true,
  },
 };
