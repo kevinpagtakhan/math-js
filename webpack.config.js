@@ -12,11 +12,11 @@ export default {
       type: 'module',
     }
   },
- mode: 'development',
- optimization: {
-   usedExports: true,
- },
- experiments: {
-   outputModule: true,
- },
+  mode: 'development',
+  optimization: {
+    usedExports: true,
+  },
+  experiments: {
+    outputModule: true,
+  },
 };
